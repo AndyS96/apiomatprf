@@ -23,6 +23,7 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 package com.apiomat.nativemodule.modulschueller;
+import java.util.List;
 import com.apiomat.nativemodule.*;
 import com.apiomat.nativemodule.basics.User;
 
@@ -55,7 +56,7 @@ public class TeilnehmerHooksNonTransient<T extends com.apiomat.nativemodule.modu
     @Override
     public void afterPost( com.apiomat.nativemodule.modulschueller.Teilnehmer obj, com.apiomat.nativemodule.Request r )
     {
-    	/*
+    	
     	String user = (String) r.getUserEmail();
     	List<Referent> referent = this.model.findByNames(Referent.class, "userName == \""+ user +"\"", r);
     	
@@ -63,7 +64,7 @@ public class TeilnehmerHooksNonTransient<T extends com.apiomat.nativemodule.modu
     		for (Referent referent2 : referent) {
     			referent2.postListeTeilnehmer(obj);
     		}
-    	}*/
+    	}
     }
 
     @Override
