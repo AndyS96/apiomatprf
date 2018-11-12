@@ -55,7 +55,7 @@ public class TeilnehmerHooksNonTransient<T extends com.apiomat.nativemodule.modu
     @Override
     public void afterPost( com.apiomat.nativemodule.modulschueller.Teilnehmer obj, com.apiomat.nativemodule.Request r )
     {
-    	String user = r.getUserEmail();
+    	String user = (String) r.getUserEmail();
     	List<Referent> referent = this.model.findByNames(Referent.class, "userName == \""+ user +"\"", r);
     	
     	if(null!=referent && referent.size()>0) {
