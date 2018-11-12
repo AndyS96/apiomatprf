@@ -67,6 +67,7 @@ public class ModulSchueller implements com.apiomat.nativemodule.IModule
     public static String CNAME = "ModulSchueller_companyName";
     
     
+    
     /**
      * This method gets called once in the cluster when the module is uploaded.
      */
